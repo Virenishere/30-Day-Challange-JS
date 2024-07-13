@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Virender Prasad</h1>
 <h3 align="center">A dedicated learner in frontend development from India.</h3>
 
-- 🔭 I’m currently working on [30 days challenge on JavaScript](https://github.com/Sanaullah9190/30-Day-challange-js)
+- 🔭 I’m currently working on [30 days challenge on JavaScript](https://github.com/Virenishere/30-Day-Challange-JS)
 
 - 🌱 I’m currently learning **JavaScript concept with completing 30 days challenge series led by chaiaurcode by @hiteshchoudhary**
 
