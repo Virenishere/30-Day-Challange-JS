@@ -90,3 +90,51 @@ const mulDimSparr =[
 ]
 console.log(mulDimSparr[0][0]); //output is "1"
 console.log(mulDimSparr[0][1]); //output is "2"
+
+//Feature Request 
+
+//Array Manipulation Script : Write a scrit that demonstrate the creation of an Array, adding and removing elements using push, pop, shift , and unshift methods.
+
+const manArr = [1,2,3,4,5];
+manArr.push(6);
+console.log(manArr); //ouput is "[1, 2, 3, 4, 5, 6]"
+
+manArr.pop();
+console.log(manArr); //ouput is "[1, 2, 3, 4, 5]"
+
+manArr.unshift(0);
+console.log(manArr); //ouput is "[0, 1, 2, 3, 4, 5]"
+
+manArr.shift();
+console.log(manArr); //ouput is "[1, 2, 3, 4, 5]"
+
+//Array Transformation Script: Create a script that uses map, filter , and reduce methods to transform and aggregate array data.
+
+const transArr = [1,2,3,4,5]
+
+const newMaparr = transArr.map( (num)=>num*4 );
+console.log(newMaparr); //ouput is "[4, 8, 12, 16, 20]"
+
+const newFilarr = transArr.filter ( (num)=>{return num%2 === 0});
+console.log(newFilarr); //output is "[2,4]"
+
+const newRedarr = transArr.reduce((acc,item)=>acc+item,0)
+console.log(newRedarr); //output is "15"
+
+//Array Iteration Script: Write a script that iterates over an array using both for loop and forEach methods and logs.
+
+const newForeacharr = [1,2,3,4,5];
+for(let element of newForeacharr){
+    console.log(element); 
+}
+//output is "1 2 3 4 5"
+
+newForeacharr.forEach( (num)=> console.log(num))
+//output is "1 2 3 4 5"
+
+//Two-dimensional Array Script: Create a script that demonstrates the creation and manipulation of a two-dimensional array.
+
+const newTwoarr =[[1,2,3,4],[4,5,6,7,8]];
+console.log(newTwoarr[0][0]) //output is "1"
+newTwoarr[0][0] = 10; //manipulate
+console.log(newTwoarr[0][0])//output is "10"
