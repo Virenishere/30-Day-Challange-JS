@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<style>
+body{
+    background-color: #212121; 
+    color:whitesmoke;
+}
+
+#imgOne{
+    height: 100px;
+}
+</style>
+<body>
+
+   <h1> Activity 1: Selecting and Manipulating Elements </h1>
+
+   <h2 id="act1">Welcome</h2>
+   <h2 class="change-color">Red</h2>
+
+   <h1> Activity 2: Creating and Appending Elements </h1>
+   
+   <ul class="append">
+    <li class="appendtest">one</li>
+    <li class="appendtest">two</li>
+    <li class="appendtest">three</li>
+   </ul>
+   
+   <h1> 3: Removing Elements </h1>
+   <p>Already done over JS</p> 
+
+   <h1>Activity 4: Modifying Attributes and Classes</h1>
+   <img id="imgOne" src="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagetest">
+
+   <h2 class="css-class">Test</h2>
+
+   <h1>Activity 5: Event Handling </h1>
+
+   <p id="textchange">Text Paragraph</p>
+   <button id="btn">Click Here</button>
+    <script>
+
+    // task 1: Select an HTML element by its ID and change its text content.   
+   const changeText = document.getElementById('act1');
+   changeText.innerHTML = "Text Changed";
+
+   // task 2: Select an HTML element by its class and change its background color.
+   const changeColor = document.querySelector('.change-color');
+   changeColor.style.backgroundColor = "red";
+
+   // task 3: Create a new div elements with some text content and append it to the body.
+   const createElement = document.createElement('div');
+   createElement.textContent = "This is a new div element";
+   document.body.appendChild(createElement);
+
+   // task 4 : Create a new li element and add it to existing ul list.
+   const createLi = document.createElement('li');
+   createLi.textContent = "Four";
+//    console.log(createLi); //output is "Four" 
+
+   // task 5: Select an HTML element and remove it from the DOM.
+   createElement.remove();
+
+   // task 6: Remove the last child of a specific HTML element.
+   const removeLastchild = createLi.querySelector('li-last-child')
+ //  removeLastchild.remove() 
+   
+   // task 7: Select an HTML element and change one of its attributes (e.g., src of and img tag).
+
+   const changeImg = document.querySelector('#imgOne');
+   changeImg.src='https://images.pexels.com/photos/3196887/pexels-photo-3196887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+
+   // task 8: Add and remove a CSS class to/from an HTML element.
+
+   const newClass = document.querySelector('.css-class');
+   console.log(newClass);
+
+   newClass.classList.add('addingcssclass');
+
+   newClass.classList.remove('addingcssclass');
+
+   // task 9: Add a click event listener to a button that changes the text content of a paragraph.
+
+   const changePara = document.querySelector("#textchange");
+   const button = document.querySelector('#btn');
+
+   function eventListener(){
+    changePara.textContent = "This is modified paragraph";
+   }
+
+   button.addEventListener('click', eventListener);
+
+   // task 10: Add a mouseover event listener to an element that changes its border color.
+
+   function borderColor(){
+    button.style.borderColor = "aqua";
+   }
+
+   button.addEventListener('mouseover', borderColor)
+    </script>
+    
+</body>
+</html>
