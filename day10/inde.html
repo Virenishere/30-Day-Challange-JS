@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Hello World!</p>
+    <button>Click Me</button>
+    <br/>
+    <img id="hiteshsir" src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="hitesh-sir-image">
+    
+    <hr/>
+
+    <div id="bgColor">
+        Background
+    </div>
+    <hr>
+    <h3>Keydown Event</h3>
+    <input id="keydown" type="text" placeholder="Enter keys...">
+    
+    <h3>Keyup Event</h3>
+    <input id="keyup" type="text" placeholder="type here and will give output after key release">
+    
+    <hr/>
+    <!-- Form Event -->
+
+    <h3>Form Event</h3>
+
+    <form id="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+<br/>
+
+<hr/>
+    <label for="mySelect">Choose an option:</label>
+    <select id="mySelect">
+        <option value="" disabled selected>Select an option</option>
+        <option value="frontend">frontend</option>
+        <option value="backend">backend</option>
+        <option value="fullstack">fullstack</option>
+        <option value="ux/ui">ux/ui</option>
+    </select>
+
+    <p id="optVal">
+        Selected Option Value will appear here.
+    </p>
+
+    <hr/>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Items 4</li>
+    </ul>
+
+    <button id="addItemBtn">Add Item</button>
+    <ul id="dynamicList">
+        <!-- dynamic item will be added here -->
+    </ul>
+
+</body>
+<script src="script.js"></script>
+</html>

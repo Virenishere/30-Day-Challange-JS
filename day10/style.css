@@ -1,0 +1,25 @@
+body{
+    background-color: #414141;
+    color: aliceblue;
+}
+
+img{
+    width: 200px;
+    display: block;
+    margin-top: 20px;
+}
+#bgColor{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+input{
+    margin-top: 10px;
+    width: 500px; 
+}
+
+#btn{
+    margin-top: 10px;
+}
