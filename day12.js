@@ -78,11 +78,53 @@ try {
 
 // task 4: Create a custom error class that extends the build-in Error class. Throw an instance of this custom error in a function and handle it using a try-catch block.
 
-/////////////////////////////////classes topic/////////////////////////////////// 
+class customError extends Error{
+    constructor(message){
+        super(message);
+        this.name = this.constructor.name;
+    }
+}
+
+function riskyFunction(){
+    throw new customError('Something went wrong in riskyFunction');
+}
+
+try{
+    riskyFunction();
+}catch(error){
+    if(error instanceof customError){
+        console.error(`customError caught: ${error.message}`);
+    }else{
+        console.error(`An unexpected error occured: ${error.message}`);
+    }
+}
 
 // task 5: Write a function that validates user input (e.g., checking if a string is not empty) and throws a custom error if the validation fails. Handle the custom error using a try-catch block.
 
-/////////////////////////////////classes topic/////////////////////////////////// 
+class ValidationError extends Error{
+    constructor(message){
+        super(message);
+        this.name = this.constructor.name;
+    }
+}
+
+function validateUserInput(input){
+    if(typeof input !== 'string' || input.trim() === ''){
+        throw new ValidationError('Invalid input: Input cannot be empty or non-string.');
+    }
+    return true;
+}
+
+try{
+    validateUserInput('');
+    console.log("Input is valid");
+}catch(error){
+    if(error instanceof ValidationError){
+        console.error(`ValidationError caught: ${error.message}`);
+    }else{
+        console.error(`An unexpected error occured: ${error.message}`);
+    }
+}
 
 //Activity 4: Error Handling in Promises
 
@@ -137,6 +179,7 @@ handleRandomPromise();
 //Activity 5: Graceful Error Handling in Fetch
 
 // task 8: Use the fetch API to request data from an invalid URL and handle the error using .catch() .Log an appropriate error message to the console.
+
 
 async function fetchData(){
     try{
