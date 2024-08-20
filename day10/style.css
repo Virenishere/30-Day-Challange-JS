@@ -2,11 +2,17 @@ body{
     background-color: #414141;
     color: aliceblue;
 }
+#imageWrapper{
+    width: 200px;
+    height: 180px;
+    border: 2px solid blue;
+}
 
 img{
     width: 200px;
     display: block;
     margin-top: 20px;
+    cursor: pointer;
 }
 #bgColor{
     background-color: red;

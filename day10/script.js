@@ -7,10 +7,14 @@ document.querySelector('button').addEventListener('click', function(){
 
 // task 2: Add a double-click listener to an image that toggles its visibility.
 
-document.getElementById('hiteshsir').addEventListener('dblclick', function(){
-    this.style.visibility= "hidden";
+document.getElementById('imageWrapper').addEventListener('dblclick', function() {
+    var image = document.getElementById('hiteshsir');
+    if (image.style.display === "none") {
+        image.style.display = "block";  // Shows the image
+    } else {
+        image.style.display = "none";   // Hides the image
+    }
 });
-
 // task 3: Add a mouseover event listener to an element that changes its background color.
 
 document.getElementById("bgColor").addEventListener('mouseover', ()=>{
