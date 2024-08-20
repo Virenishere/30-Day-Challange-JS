@@ -86,7 +86,7 @@ for (let i=0; i<5; i++){
 
 functionsArray.forEach(funct => funct()); // 0 1 2 3 4 
 
-//Activity 4: Module Patter
+//Activity 4: Module Pattern
 
 // task 6: Use closures to creata a simple module for managing a collection of items. Implement methods to add, remove and list items.
 
