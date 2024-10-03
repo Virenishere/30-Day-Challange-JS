@@ -1,6 +1,6 @@
 //Activity 1: Arithmetic Operations
 
-// task 1: Write a program to add two numbers and log the result to the console.
+//task 1: Write a program to add two numbers and log the result to the console.
 
 let num1 = 6;
 let num2 = 12;
