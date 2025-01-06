@@ -103,3 +103,56 @@ let string2 = "hello";
 // console.log(pallindromeCheck(string2));  
 // Output: false
 
+//Activity 4: Recursive Search
+// task 7: Write a recursive function to perform a binary search on a sorted array. Log the index of the target element for a few test cases.
+
+
+function binarySearchRecursive(arr,target, left= 0 , right = arr.length-1){
+    if(left>right) return -1;
+
+    const mid = Math.floor((left + right)/2);
+
+    if(arr[mid] === target) return mid;
+
+    if(target < arr[mid]){
+        return binarySearchRecursive(arr,target,left,mid-1);
+    }else{
+        return binarySearchRecursive(arr,target,mid+1,right);
+    }
+}
+
+const arr1 = [1, 3, 5, 7, 9, 11, 13];
+
+// console.log(binarySearchRecursive(arr1, 7));   
+// // Output: 3
+// console.log(binarySearchRecursive(arr1, 1));   
+// // Output: 0
+// console.log(binarySearchRecursive(arr1, 13));  
+// // Output: 6
+// console.log(binarySearchRecursive(arr1, 4));   
+// // Output: -1 (not found)
+// console.log(binarySearchRecursive(arr1, 11));  
+// Output: 5
+
+
+// task 8: Write a recursive function to count the occurences of a target element in a array. Log the result for a few cases.
+
+
+function countOccurrences(arr,target,index=0){
+    if(index=== arr.length) return 0;
+
+    const count = arr[index] === target ? 1 : 0;
+
+    return count + countOccurrences(arr,target, index+1)
+}
+
+// console.log(countOccurrences([1, 2, 3, 4, 2, 2, 5], 2)); 
+// // Output: 3
+// console.log(countOccurrences([7, 8, 9, 7, 7, 10], 7));   
+// // Output: 3
+// console.log(countOccurrences([1, 1, 1, 1, 1], 1));       
+// // Output: 5
+// console.log(countOccurrences([5, 6, 7, 8], 9));          
+// // Output: 0
+// console.log(countOccurrences([], 1));                    
+// // Output: 0
