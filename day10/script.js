@@ -1,4 +1,4 @@
-
+//Day 10 : Event Handling
 //task 1: Add a click event listener to a button that changes the text content of a paragraph.
 
 document.querySelector('button').addEventListener('click', function(){

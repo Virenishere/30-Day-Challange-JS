@@ -1,4 +1,4 @@
-
+//Day 13 : Modules
 //task 1: create a modules that exports a function to add two numbers. Import and use this module in another script
 
 import {add} from "./modules/add.js"

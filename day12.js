@@ -1,3 +1,4 @@
+//Day 12 : Error Handling
 //Activity 1: Basic Error Handling with Try-Catch
 
 // task 1: Write a function that intentionally throws a error and use a try-catch block to handle the error and log an appropriate message to the console.

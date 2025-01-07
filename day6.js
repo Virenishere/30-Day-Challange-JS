@@ -1,3 +1,4 @@
+//Day 6 : Arrays
 //Activity 1: Array Creation and Access
 
 // task 1: Create an array of numbers from 1 and 5 and log the array to the console.

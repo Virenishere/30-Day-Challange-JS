@@ -1,3 +1,4 @@
+//Day 5 : Functions
 //Activity 1: Function Declaration
 
 // task 1: Write a function to check if a number is even or odd and log the result to the console.

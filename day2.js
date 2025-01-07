@@ -1,3 +1,4 @@
+//Day 2 : Operators
 //Activity 1: Arithmetic Operations
 
 //task 1: Write a program to add two numbers and log the result to the console.
